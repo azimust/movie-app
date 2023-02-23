@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+body{
+    background-color: #1a191F;
+    font-family: 'Open Sans', sans-serif;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: 60px;
+}
+.header__logo {
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+}
+.header__logo span{
+    color: rgb(89, 200, 111);
+}
+.header__search {
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+}
+.header__btn{
+    padding: 9px;
+    background-color: rgb(89, 200, 111);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border: none;
+    border-radius: 9px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.movie {
+    width: 240px;
+    margin: 10px;
+    position: relative;
+}
+.movie__cover-inner {
+    position: relative;
+}
+.movie__cover {
+    max-width: 100%;
+    height: 100%;
+}
+.movie__cover--darkened {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: 0.3s;
+}
+.movie__cover--darkened:hover {
+    transition: 0.3s;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.movie__info {
+    padding: 10px 0px;
+}
+.movie__title {
+    font-size: 16px;
+    color: white;
+}
+.movie__category {
+    font-size: 14px;
+    color: rgb(251, 183, 57);
+}
+.movie__average {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a191F;
+    color: white;
+    font-size: 14px;
+}
+.movie__average--green {
+    border: 1px solid green;
+}
+.movie__average--orange {
+    border: 1px solid orange;
+}
+.movie__average--red {
+    border: 1px solid red;
+}
