@@ -165,3 +165,16 @@ body{
     height: 100%;
     overflow: hidden;
   }
+
+  @media (max-width: 560px) {
+    .header__logo {
+        font-size: 22px;
+    }
+    .header__search {
+        padding: 4px;
+    }
+    .header__btn{
+        padding: 6px;
+        font-size: 12px;
+  }
+}
